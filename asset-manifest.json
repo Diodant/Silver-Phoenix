@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Silver-Phoenix/static/css/main.00c90025.css",
-    "main.js": "/Silver-Phoenix/static/js/main.63b2cfcb.js",
+    "main.css": "/Silver-Phoenix/static/css/main.1b5ff48c.css",
+    "main.js": "/Silver-Phoenix/static/js/main.035a18ea.js",
     "static/js/453.23263ec9.chunk.js": "/Silver-Phoenix/static/js/453.23263ec9.chunk.js",
     "static/media/heder-img.jpg": "/Silver-Phoenix/static/media/heder-img.bfb1e4e66a7be5701cfd.jpg",
     "static/media/Parallax-02.jpg": "/Silver-Phoenix/static/media/Parallax-02.f2a01a04bc2417fda88c.jpg",
@@ -54,12 +54,12 @@
     "static/media/quote.svg": "/Silver-Phoenix/static/media/quote.80e2227d9a535eef968bf1f2e868366c.svg",
     "static/media/greater-than.svg": "/Silver-Phoenix/static/media/greater-than.10dcc2779f9341113ec4.svg",
     "index.html": "/Silver-Phoenix/index.html",
-    "main.00c90025.css.map": "/Silver-Phoenix/static/css/main.00c90025.css.map",
-    "main.63b2cfcb.js.map": "/Silver-Phoenix/static/js/main.63b2cfcb.js.map",
+    "main.1b5ff48c.css.map": "/Silver-Phoenix/static/css/main.1b5ff48c.css.map",
+    "main.035a18ea.js.map": "/Silver-Phoenix/static/js/main.035a18ea.js.map",
     "453.23263ec9.chunk.js.map": "/Silver-Phoenix/static/js/453.23263ec9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.00c90025.css",
-    "static/js/main.63b2cfcb.js"
+    "static/css/main.1b5ff48c.css",
+    "static/js/main.035a18ea.js"
   ]
 }
