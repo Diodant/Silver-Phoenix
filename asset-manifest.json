@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Silver-Phoenix/static/css/main.1b5ff48c.css",
-    "main.js": "/Silver-Phoenix/static/js/main.7869c497.js",
+    "main.css": "/Silver-Phoenix/static/css/main.511b5a0f.css",
+    "main.js": "/Silver-Phoenix/static/js/main.d1241617.js",
     "static/js/453.23263ec9.chunk.js": "/Silver-Phoenix/static/js/453.23263ec9.chunk.js",
     "static/media/heder-img.jpg": "/Silver-Phoenix/static/media/heder-img.bfb1e4e66a7be5701cfd.jpg",
     "static/media/Parallax-02.jpg": "/Silver-Phoenix/static/media/Parallax-02.f2a01a04bc2417fda88c.jpg",
@@ -47,19 +47,26 @@
     "static/media/jury_2.jpg": "/Silver-Phoenix/static/media/jury_2.7abbdc378ab205d4eca2.jpg",
     "static/media/jury_11.jpg": "/Silver-Phoenix/static/media/jury_11.390b13258acde204937b.jpg",
     "static/media/nominations_6.png": "/Silver-Phoenix/static/media/nominations_6.e088a0a9127a0148ffea.png",
+    "static/media/sponsor2.png": "/Silver-Phoenix/static/media/sponsor2.7eadeee4f62202a953d7.png",
+    "static/media/sponsor4.png": "/Silver-Phoenix/static/media/sponsor4.dad1423e758b7a2811e0.png",
+    "static/media/sponsor5.png": "/Silver-Phoenix/static/media/sponsor5.a1a488ef3e433c5b5dda.png",
+    "static/media/sponsor6.png": "/Silver-Phoenix/static/media/sponsor6.537c4fac0277a60c26be.png",
     "static/media/nominations_5.png": "/Silver-Phoenix/static/media/nominations_5.b87160d99c77430740c9.png",
+    "static/media/sponsor9.png": "/Silver-Phoenix/static/media/sponsor9.f87ca8d4a84fab02c233.png",
+    "static/media/sponsor1.png": "/Silver-Phoenix/static/media/sponsor1.f3bbf1ad1250cbf27d2a.png",
+    "static/media/sponsor8.png": "/Silver-Phoenix/static/media/sponsor8.f2bf31313b48967566b4.png",
     "static/media/logo.svg": "/Silver-Phoenix/static/media/logo.481faf6965f25ccbd61f73b93b3e618f.svg",
     "static/media/cancel_17466309.svg": "/Silver-Phoenix/static/media/cancel_17466309.80f8ef53fc8975e848b3ab43fd8d08c4.svg",
     "static/media/menu_17466330.svg": "/Silver-Phoenix/static/media/menu_17466330.1189132fc6c32624fed626ab508c670a.svg",
     "static/media/quote.svg": "/Silver-Phoenix/static/media/quote.80e2227d9a535eef968bf1f2e868366c.svg",
     "static/media/greater-than.svg": "/Silver-Phoenix/static/media/greater-than.10dcc2779f9341113ec4.svg",
     "index.html": "/Silver-Phoenix/index.html",
-    "main.1b5ff48c.css.map": "/Silver-Phoenix/static/css/main.1b5ff48c.css.map",
-    "main.7869c497.js.map": "/Silver-Phoenix/static/js/main.7869c497.js.map",
+    "main.511b5a0f.css.map": "/Silver-Phoenix/static/css/main.511b5a0f.css.map",
+    "main.d1241617.js.map": "/Silver-Phoenix/static/js/main.d1241617.js.map",
     "453.23263ec9.chunk.js.map": "/Silver-Phoenix/static/js/453.23263ec9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b5ff48c.css",
-    "static/js/main.7869c497.js"
+    "static/css/main.511b5a0f.css",
+    "static/js/main.d1241617.js"
   ]
 }
