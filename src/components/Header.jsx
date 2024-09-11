@@ -24,34 +24,25 @@ const Header = () => {
       <nav className={`menu ${menuOpen ? 'open' : ''}`}>
         <ul className="menu-list">
           <li className="menu-item">
-            <Link to="/" onClick={toggleMenu}>Home</Link>
+            <Link to="/" onClick={toggleMenu}>Главная</Link>
           </li>
           <li className="menu-item">
-            <Link to="/about" onClick={toggleMenu}>About</Link>
+            <Link to="/about" onClick={toggleMenu}>О премии</Link>
           </li>
           <li className="menu-item">
-            <Link to="/criteria" onClick={toggleMenu}>Criteria</Link>
+            <Link to="/position" onClick={toggleMenu}>Положение</Link>
           </li>
           <li className="menu-item">
-            <Link to="/position" onClick={toggleMenu}>Position</Link>
+            <Link to="/winners" onClick={toggleMenu}>Победители</Link>
           </li>
           <li className="menu-item">
-            <Link to="/winners" onClick={toggleMenu}>Winners</Link>
+            <Link to="/jury" onClick={toggleMenu}>Жюри</Link>
           </li>
           <li className="menu-item">
-            <Link to="/jury" onClick={toggleMenu}>Jury</Link>
+            <Link to="/articles" onClick={toggleMenu}>Статьи</Link>
           </li>
           <li className="menu-item">
-            <Link to="/grandprix" onClick={toggleMenu}>Grand Prix</Link>
-          </li>
-          <li className="menu-item">
-            <Link to="/articles" onClick={toggleMenu}>Articles</Link>
-          </li>
-          <li className="menu-item">
-            <Link to="/apply" onClick={toggleMenu}>Apply</Link>
-          </li>
-          <li className="menu-item">
-            <Link to="/contacts" onClick={toggleMenu}>Contacts</Link>
+            <Link to="/contacts" onClick={toggleMenu}>Контакты</Link>
           </li>
         </ul>
       </nav>
