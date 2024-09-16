@@ -22,6 +22,7 @@ const Footer = () => {
           <h4>Навигация</h4>
           <ul className="footer-list">
             <li className="footer-item"><Link to="/">Главная</Link></li>
+            <li className="footer-item"><Link to="/about">О премии</Link></li>
             <li className="footer-item"><Link to="/articles">Статьи</Link></li>
             <li className="footer-item"><Link to="/contacts">Контакты</Link></li>
           </ul>
@@ -30,9 +31,10 @@ const Footer = () => {
         <div className="footer-info-section">
           <h4>Премия</h4>
           <ul className="footer-list">
-          <li className="footer-item"><Link to="/position">Положение</Link></li>
+          <li className="footer-item"><Link to="/nominations">Номинации</Link></li>
             <li className="footer-item"><Link to="/winners">Победители</Link></li>
             <li className="footer-item"><Link to="/jury">Жюри</Link></li>
+            <li className="footer-item"><Link to="/position">Положение</Link></li>
           </ul>
         </div>
       </div>

@@ -445,7 +445,7 @@ a:focus {
 
 
 .background-section {
-  background-image: url('./img/Parallax-02.jpg');
+  background-image: url('./img/second-home.jpg');
   background-size: cover;
   background-position: center;
   height: 50vh; 
@@ -459,17 +459,20 @@ a:focus {
   color: white;
   text-align: center;
   z-index: 1; 
+  padding: 20px;
 }
 
 .centered-title {
   font-weight: 600;
+  max-width: 1200px;
+  margin: 0 auto;
   line-height: 1.01em;
   font-size: 45px;
   margin-bottom: 20px;
 }
 
 .centered-text {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.6;
   letter-spacing: 0.6px;
   max-width: 800px;
@@ -483,7 +486,7 @@ a:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.4);
   z-index: 0; 
 }
 
@@ -506,6 +509,14 @@ a:focus {
 .nominations-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nominations-home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
@@ -619,7 +630,7 @@ a:focus {
 }
 
 .position-description {
-  font-size: 18px;
+  font-size: 20px;
   color: #5c5c5c;
   margin-bottom: 30px;
   line-height: 1.8;
@@ -641,7 +652,7 @@ a:focus {
 }
 
 .position-description ul li {
-  font-size: 18px;
+  font-size: 20px;
   color: #333;
   margin-bottom: 10px;
   position: relative;
@@ -685,6 +696,16 @@ a:focus {
 
 .about-section {
   padding: 30px;
+  margin-top: 40px;
+}
+
+
+.about-section h2 {
+  font-size: 40px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .about-section p{
@@ -693,6 +714,196 @@ a:focus {
   line-height: 1.6;
   color: #333;
   margin-bottom: 20px;
+}
+
+/* Articles */
+
+.articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.article-card {
+  overflow: hidden;
+  width: 100%;
+  max-width: 550px;
+  transition: transform 0.3s ease;
+  position: relative; /* Set the position to relative */
+}
+
+/* Image container */
+.article-card .article-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for the article card */
+.article-card:hover .article-image {
+  transform: scale(1.1); /* Zoom in effect */
+}
+
+
+.article-info {
+  padding: 20px 0px;
+}
+
+.article-meta {
+  display: flex;
+  font-weight: 400;
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+
+.article-title {
+  font-weight: 600;
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.article-text {
+  font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.6px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+/* Link to the article */
+.article-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.article-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.article-page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: start;
+}
+
+
+
+/* Main image for the article */
+.article-page-image {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Article content container */
+.article-page-content {
+  line-height: 1.6;
+  color: #444;
+}
+
+
+.article-paragraph {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.article-header {
+  font-size: 1.8rem;
+  color: #c5996f;
+  margin: 20px 0px;
+  display: inline-block; 
+  position: relative; 
+  padding-bottom: 5px; 
+}
+
+.article-header::after {
+  content: ''; 
+  display: block; 
+  width: 100%; 
+  height: 2px; 
+  background-color: #c5996f; 
+  position: absolute; 
+  left: 0; 
+  bottom: 0; 
+}
+
+.article-sub-header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+
+
+
+.position-list {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+/* Individual list items */
+.position-list li {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.position-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url(./img/greater-than.svg);
+  background-size: cover;
+}
+
+
+.article-autor {
+  font-size: 18px;
+  color: #777;
+  text-align: right;
+  margin-top: 30px;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .article-container {
+    padding: 20px 15px;
+  }
+
+  .article-page-title {
+    font-size: 2rem;
+  }
+
+  .article-meta {
+    font-size: 0.9rem;
+  }
+
+  .article-paragraph, .article-header, .article-sub-header {
+    font-size: 1rem;
+  }
 }
 
 /* Jury */
@@ -755,11 +966,21 @@ a:focus {
   color: #333;
 }
 
-/* Jury Cards */
 .jury-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+}
+
+.jury-cards.visible {
+  max-height: 2000px; 
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .jury-card {
@@ -776,10 +997,12 @@ a:focus {
 }
 
 .jury-photo {
-  width: 388px;
-  height: 388px;
+  width: 100%; 
+  height: auto; 
   border: 4px solid #c5996f;
   margin-bottom: 15px;
+  object-fit: cover; 
+  display: block;
 }
 
 .jury-info h3 {
@@ -791,6 +1014,33 @@ a:focus {
 .jury-info p {
   font-size: 20px;
   color: #5c5c5c;
+}
+
+/* Кнопка переключения видимости */
+.toggle-jury-btn {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.toggle-jury-btn button {
+  padding: 10px 20px;
+  background-color: #c5996f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-jury-btn button:hover {
+  background-color: #a87754;
+}
+
+/* Стиль для скрытого состояния */
+.jury-cards.hidden {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-20px);
 }
 
 .conclusion-section {
@@ -1027,6 +1277,51 @@ h1 {
 .contact-info p {
   margin: 5px 0;
   color: #555;
+}
+
+.sponsors-section {
+  background-color: #c5996f; 
+  padding: 40px 0;
+}
+
+.sponsors-container {
+  display: grid;
+  max-width: 1300px;
+  margin: 0 auto;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+}
+
+.sponsor-logo img {
+  max-width: 150px; 
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.sponsor-logo img:hover {
+  filter: none; 
+}
+
+
+@media (max-width: 1024px) {
+  .sponsors-container {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+@media (max-width: 768px) {
+  .sponsors-container {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 480px) {
+  .sponsors-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 .footer {

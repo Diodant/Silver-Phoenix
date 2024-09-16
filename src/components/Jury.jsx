@@ -76,8 +76,14 @@ const juryData = {
     ]
   };
 
-const Jury = () => {
-  const [selectedYear, setSelectedYear] = useState('2019');
+  const Jury = () => {
+    const [selectedYear, setSelectedYear] = useState('2019');
+    const [isJuryVisible, setIsJuryVisible] = useState(false); // Состояние для управления видимостью карточек
+  
+    // Функция для переключения видимости карточек жюри
+    const toggleJuryVisibility = () => {
+      setIsJuryVisible((prevVisible) => !prevVisible);
+    };
 
   return (
     <>
@@ -110,24 +116,31 @@ const Jury = () => {
         </div>
       </div>
 
-      <div className="jury-cards">
-        {juryData[selectedYear].map((member) => (
-          <div className="jury-card" key={member.name}>
-            <img src={member.image} alt={member.name} className="jury-photo" />
-            <div className="jury-info">
-              <h3>{member.name}</h3>
-              <p>{member.title}</p>
-              <p>{member.description}</p>
+        {/* Кнопка для управления видимостью карточек жюри */}
+        <div className="toggle-jury-btn">
+          <button onClick={toggleJuryVisibility}>
+            {isJuryVisible ? 'Скрыть членов жюри' : 'Показать членов жюри'}
+          </button>
+        </div>
+
+        {/* Блок карточек жюри с анимацией появления */}
+        <div className={`jury-cards ${isJuryVisible ? 'visible' : 'hidden'}`}>
+          {juryData[selectedYear].map((member) => (
+            <div className="jury-card" key={member.name}>
+              <img src={member.image} alt={member.name} className="jury-photo" />
+              <div className="jury-info">
+                <h3>{member.name}</h3>
+                <p>{member.title}</p>
+                <p>{member.description}</p>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
       <div className="conclusion-section">
         <h2>Престиж и важность быть членом жюри</h2>
         <p>Каждый год премия Silver Phoenix Awards привлекает внимание лучших специалистов индустрии кино и телевидения со всего мира. Быть членом жюри этой премии — это не только профессиональное признание, но и высшая честь, которая доступна только самым выдающимся представителям своей профессии. Каждый специалист, удостоенный чести быть в составе жюри, обладает безупречной репутацией, многолетним опытом и глубоким пониманием всех аспектов создания фильмов и телевизионных программ.</p>
         <p>Стать членом жюри Silver Phoenix Awards — это признание не только в кругу коллег, но и в мировом сообществе кино и телевидения. Члены жюри отбираются с особым вниманием к их достижениям, профессиональной репутации и способности объективно оценивать работы номинантов. Это статус, который открывает новые горизонты в карьере, позволяя поделиться своим опытом и внести вклад в развитие мировой кино- и телеиндустрии. Для каждого специалиста участие в жюри премии — это возможность проявить свои знания и опыт на международной арене, став частью великого культурного события.</p>
-        <h2>Заключение</h2>
         <p>С каждым годом состав жюри Silver Phoenix Awards продолжает отражать высокий уровень профессионализма и экспертизы, что делает эту премию одной из самых престижных в мире кино и телевидения. Участие в жюри — это не только признание за достижения, но и возможность внести свой вклад в развитие мировой кино- и телеиндустрии, помогая открывать новые таланты и поддерживать высокие стандарты искусства.</p>
       </div>
     </div>

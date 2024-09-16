@@ -1,4 +1,5 @@
 import React from 'react';
+import PageHeader from './PageHeader';
 import Best_1 from '../img/nominations/nominations_1.png';
 import Best_2 from '../img/nominations/nominations_2.png';
 import Best_3 from '../img/nominations/nominations_3.png';
@@ -126,6 +127,8 @@ const nominationsData = [
 
 const Nominations = () => {
   return (
+    <>
+    <PageHeader title="Номинации" breadcrumb="Номинации" />
     <section className="nominations-section">
       <h2 className='title'>Номинации и Критерии отбора победителей Международной Премии в области кино и телевидения  Silver Phoenix Awards</h2>
       <div className="nominations-grid">
@@ -142,6 +145,7 @@ const Nominations = () => {
         ))}
       </div>
     </section>
+    </>
   );
 };
 

@@ -30,6 +30,9 @@ const Header = () => {
             <Link to="/about" onClick={toggleMenu}>О премии</Link>
           </li>
           <li className="menu-item">
+            <Link to="/nominations" onClick={toggleMenu}>Номинации</Link>
+          </li>
+          <li className="menu-item">
             <Link to="/position" onClick={toggleMenu}>Положение</Link>
           </li>
           <li className="menu-item">
