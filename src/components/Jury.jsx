@@ -78,9 +78,8 @@ const juryData = {
 
   const Jury = () => {
     const [selectedYear, setSelectedYear] = useState('2019');
-    const [isJuryVisible, setIsJuryVisible] = useState(false); // Состояние для управления видимостью карточек
+    const [isJuryVisible, setIsJuryVisible] = useState(false);
   
-    // Функция для переключения видимости карточек жюри
     const toggleJuryVisibility = () => {
       setIsJuryVisible((prevVisible) => !prevVisible);
     };
@@ -116,14 +115,12 @@ const juryData = {
         </div>
       </div>
 
-        {/* Кнопка для управления видимостью карточек жюри */}
         <div className="toggle-jury-btn">
           <button onClick={toggleJuryVisibility}>
             {isJuryVisible ? 'Скрыть членов жюри' : 'Показать членов жюри'}
           </button>
         </div>
 
-        {/* Блок карточек жюри с анимацией появления */}
         <div className={`jury-cards ${isJuryVisible ? 'visible' : 'hidden'}`}>
           {juryData[selectedYear].map((member) => (
             <div className="jury-card" key={member.name}>

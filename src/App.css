@@ -978,7 +978,7 @@ a:focus {
 }
 
 .jury-cards.visible {
-  max-height: 2000px; 
+  max-height: 100%; 
   opacity: 1;
   transform: translateY(0);
 }
@@ -1016,7 +1016,6 @@ a:focus {
   color: #5c5c5c;
 }
 
-/* Кнопка переключения видимости */
 .toggle-jury-btn {
   text-align: center;
   margin-bottom: 20px;
@@ -1036,7 +1035,6 @@ a:focus {
   background-color: #a87754;
 }
 
-/* Стиль для скрытого состояния */
 .jury-cards.hidden {
   max-height: 0;
   opacity: 0;
