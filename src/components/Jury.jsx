@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PageHeader from './PageHeader';
 import JuryImg_1 from '../img/jury/jury_1.jpg';
 import JuryImg_2 from '../img/jury/jury_2.jpg';
@@ -77,13 +77,33 @@ const juryData = {
   };
 
   const Jury = () => {
-    const [selectedYear, setSelectedYear] = useState('2019');
+    const [selectedYear, setSelectedYear] = useState('2021');
     const [isJuryVisible, setIsJuryVisible] = useState(false);
   
     const toggleJuryVisibility = () => {
       setIsJuryVisible((prevVisible) => !prevVisible);
     };
+  
+    useEffect(() => {
+      const replaceName = () => {
 
+        const elements = document.querySelectorAll('[data-translate-custom="true"]');
+        elements.forEach((el) => {
+          if (document.documentElement.lang !== 'ru') {
+            el.textContent = 'Suren Dzhulakyan';
+          }
+        });
+      };
+  
+      const observer = new MutationObserver(() => {
+        replaceName();
+      });
+  
+      observer.observe(document.body, { childList: true, subtree: true });
+  
+      return () => observer.disconnect();
+    }, []);
+  
   return (
     <>
     <PageHeader title="Жюри" breadcrumb="Жюри" />
@@ -126,7 +146,9 @@ const juryData = {
             <div className="jury-card" key={member.name}>
               <img src={member.image} alt={member.name} className="jury-photo" />
               <div className="jury-info">
-                <h3>{member.name}</h3>
+              <h3 data-translate-custom={member.name === "Сурен Джулакян" ? "true" : "false"}>
+                  {member.name}
+                </h3>
                 <p>{member.title}</p>
                 <p>{member.description}</p>
               </div>
