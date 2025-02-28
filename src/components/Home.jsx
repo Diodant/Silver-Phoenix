@@ -13,6 +13,7 @@ import Best_7 from '../img/nominations/nominations_7.png';
 import Best_8 from '../img/nominations/nominations_8.png';
 import Best_9 from '../img/nominations/nominations_9.png';
 import Best_10 from '../img/nominations/nominations_10.png';
+import Best_11 from '../img/nominations/nominations_11.png';
 
 const comments = [
   {
@@ -64,6 +65,10 @@ const nominationsData = [
   {
     title: 'Лучший режиссер',
     icon: Best_8,
+  },
+  {
+    title: 'Лучший художник по свету',
+    icon: Best_11,
   },
   {
     title: 'Лучший композитор',
